@@ -52,10 +52,18 @@ void mostraTabuleiro(string arr[LINHAS][COLUNAS]) {
     cout << "|" << arr[2][0] << "|" << arr[2][1] << "|" << arr[2][2] << "|" << arr[2][3] << "|" << arr[2][4] << "|" << arr[2][5] << "|" << arr[2][6] << "|" << arr[2][7] << "|" << arr[2][8] << "|\n";
     cout << "|" << arr[1][0] << "|" << arr[1][1] << "|" << arr[1][2] << "|" << arr[1][3] << "|" << arr[1][4] << "|" << arr[1][5] << "|" << arr[1][6] << "|" << arr[1][7] << "|" << arr[1][8] << "|\n";
     cout << "|" << arr[0][0] << "|" << arr[0][1] << "|" << arr[0][2] << "|" << arr[0][3] << "|" << arr[0][4] << "|" << arr[0][5] << "|" << arr[0][6] << "|" << arr[0][7] << "|" << arr[0][8] << "|\n";
-    cout << "|" << "1" << "|" << "2" << "|" << "3" << "|" << "4" << "|" << "5" << "|" << "6" << "|" << "7" << "|" << "8" << "|" << "9" << "\n";
+    cout << "|" << "1" << "|" << "2" << "|" << "3" << "|" << "4" << "|" << "5" << "|" << "6" << "|" << "7" << "|" << "8" << "|" << "9" << "|" << "\n";
 }
 
 int pedePecaJogador(){
+    int col;
+    cout << "Em que coluna quer jogar (escolhe entre 1 e 9): ";
+    cin >> col;
+    if (col > 9) {
+        cout << "Escolhe entre 1 e 9, obrigado";
+    } if (0>col) {
+        cout << "Escolhe entre 1 e 9, obrigado";
+    }
     return 0;
 }
 
